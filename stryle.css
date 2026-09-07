@@ -129,8 +129,59 @@ body, html {
 /*Card Godridc Gryffindor*/
 .card-godric {
     background-color: #272121;
-    padding: 2.5rem 1.5rem 1.5rem 1.5rem;
+    padding: 1.5rem;
     border-radius: 5px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.6);
     color: #fff;
+}
+
+.godric-imagen {
+    max-width: 300px;
+    border-radius: 4px;
+}
+
+.titulo-dorado{
+    color: #e5b95b;
+    font-weight: bold;
+    font-size: 1.7rem;
+    letter-spacing: 1.5px;
+}
+
+.etiqueta-roja{
+    background-color: #7f0909;
+    padding: 5px;
+    letter-spacing: 2px;
+}
+
+.frase-cita{
+    font-style: italic;
+    color: #c9c1c1;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin: 10px 0;
+}
+
+.caja-elementos-godric{
+    background-color: #141010;
+    padding: 15px 5px;
+    align-items: center;
+}
+
+.borde-derecho{
+    border-right: 1 px solid #332a2a;
+}
+
+.titulo-stat{
+    display: block;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #9c9292;
+    font-weight:650;
+}
+
+.valor-stat {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
 }
