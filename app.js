@@ -1,7 +1,5 @@
-console.log("Hola ");
-
 // Selectores
-const formEl = document.getElementById("album-form");
+const formEl = document.getElementById("recruitment-form");
 //console.log(formEl);
 
 const mainEl = document.querySelector("#album-container");
