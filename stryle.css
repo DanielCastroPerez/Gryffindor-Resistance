@@ -1,0 +1,37 @@
+body{
+    background-color: #201716;
+}
+/*Estilos banner*/
+.titulo{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.valiente{
+    color: #F5C441;
+    text-decoration: underline;
+    text-decoration-color: #EBA59B;
+}
+
+.rosa{
+    color: #EBA59B;
+}
+.amarillo{
+    color: #F5C441;
+}
+.blanco{
+    color: #F0DEDF;
+}
+.color-texto{
+   color: #ADA08F; 
+}
+
+.btn-prueba{
+
+}
+
+.btn-heroes{
+
+}
+/*Fin Estilos banner*/
