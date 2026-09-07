@@ -24,4 +24,90 @@ body, html {
 	color: #ffd700;
 }
 
+    /* Estilos del Footer */
+    .custom-footer {
+      background-color: #1a0b0b; /* Color de fondo base muy oscuro */
+      padding: 10px;
+    }
+
+    /* Paneles de madera con borde metálico */
+    .wood-panel {
+      position: relative;
+      background: linear-gradient(180deg, #3d1b11 0%, #210a05 100%); /* Fondo simulando madera oscura */
+      border: 3px solid #55555d; /* Borde gris metálico */
+      box-shadow: inset 0 0 10px rgba(0,0,0,0.8), 0 0 5px rgba(0,0,0,0.5);
+      border-radius: 2px;
+      padding: 12px 20px;
+      min-height: 54px;
+    }
+
+    /* Remaches en las esquinas */
+    .wood-panel::before, .wood-panel::after {
+      content: '';
+      position: absolute;
+      width: 6px;
+      height: 6px;
+      background: radial-gradient(circle, #888 30%, #333 90%);
+      border-radius: 50%;
+      border: 1px solid #111;
+      top: 3px;
+    }
+
+    .wood-panel::before { left: 3px; }
+    .wood-panel::after { right: 3px; }
+
+    /* Texto e íconos en dorado */
+    .golden-text {
+      color: #e5a93c; /* Color dorado Gryffindor */
+      font-family: Arial, sans-serif;
+      font-size: 0.85rem;
+    }
+
+    /* Contenedor e íconos en círculo */
+    .social-icons {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .social-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 28px;
+      height: 28px;
+      background-color: #e5a93c; /* Fondo dorado del círculo */
+      border-radius: 50%;
+      color: #210a05; /* Color oscuro para el ícono */
+      text-decoration: none;
+      transition: transform 0.2s ease, background-color 0.2s ease;
+    }
+
+    /* Estilo para las imágenes PNG dentro de los círculos */
+    .social-icon img {
+      width: 16px; /* Ajusta el tamaño de la imagen */
+      height: 16px;
+      object-fit: contain; /* Mantiene la proporción de la imagen */
+      /* Si tus imágenes son oscuras, este filtro las puede volver claras */
+      /* filter: brightness(0) invert(1); */
+    }
+
+    .social-icon:hover {
+      background-color: #ffd700; /* Dorado más brillante al pasar el mouse */
+      transform: scale(1.1);
+    }
+
+    /* Enlaces del panel derecho */
+    .footer-links a {
+      color: #e5a93c;
+      text-decoration: none;
+      font-size: 0.85rem;
+      margin-left: 18px;
+      transition: color 0.3s ease;
+    }
+
+    .footer-links a:hover {
+      color: #ffd700;
+      text-decoration: underline;
+    }
 
