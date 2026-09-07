@@ -1,0 +1,246 @@
+/* ================================================================
+   1. VARIABLES DE COLOR DE GRYFFINDOR
+   ================================================================ */
+:root {
+  --gryffindor-red: #740001;
+  --gryffindor-dark-red: #3b0a0d;
+  --gryffindor-gold: #d3a625;
+  --gryffindor-light-gold: #f0d77a;
+  --gryffindor-cream: #f4ead7;
+  --gryffindor-brown: #241719;
+  --gryffindor-card: #321f21;
+}
+
+/* Incluye el padding y el borde dentro del tamaño de cada elemento. */
+* {
+  box-sizing: border-box;
+}
+
+/* Fondo básico */
+body {
+  margin: 0;
+  background-color: #160e10;
+}
+
+/* ================================================================
+   2. SECCIÓN PRINCIPAL
+   ================================================================ */
+.gryffindor-section {
+  min-height: 100vh;
+  color: var(--gryffindor-cream);
+  font-family: Georgia, "Times New Roman", serif;
+  background:
+    linear-gradient(rgba(22, 14, 16, 0.96), rgba(22, 14, 16, 0.96)),
+    repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 30px,
+      rgba(211, 166, 37, 0.05) 31px,
+      rgba(211, 166, 37, 0.05) 32px
+    );
+}
+
+/* Texto pequeño color dorado que aparece sobre el título. */
+.section-label {
+  color: var(--gryffindor-gold);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.78rem;
+  font-weight: bold;
+  letter-spacing: 0.15rem;
+  text-transform: uppercase;
+}
+
+/* Título principal de la sección. */
+.section-title {
+  max-width: 650px;
+  color: var(--gryffindor-cream);
+  font-size: clamp(2.1rem, 5vw, 4rem);
+  font-weight: bold;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+/* Texto explicativo colocado al lado del título. */
+.section-description {
+  color: #c9bab3;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+/* ================================================================
+   3. CONTENEDOR DESLIZABLE
+   overflow-x permite mover las tarjetas horizontalmente.
+   scroll-snap ayuda a detener el movimiento justo en cada tarjeta.
+   ================================================================ */
+.cards-slider {
+  padding: 6px 2px 22px;
+  display: flex;
+  gap: 22px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  scrollbar-color: var(--gryffindor-gold) var(--gryffindor-brown);
+  scrollbar-width: thin;
+}
+
+/* Personaliza la barra horizontal */
+.cards-slider::-webkit-scrollbar {
+  height: 9px;
+}
+
+.cards-slider::-webkit-scrollbar-track {
+  background-color: var(--gryffindor-brown);
+  border-radius: 20px;
+}
+
+.cards-slider::-webkit-scrollbar-thumb {
+  background-color: var(--gryffindor-gold);
+  border-radius: 20px;
+}
+
+/* ================================================================
+   4. TARJETAS
+   ================================================================ */
+.gryffindor-card {
+  /* Cada tarjeta ocupa aproximadamente una tercera parte en computadora. */
+  flex: 0 0 calc((100% - 44px) / 3);
+  min-width: 280px;
+  overflow: hidden;
+  color: var(--gryffindor-cream);
+  background-color: var(--gryffindor-card);
+  border: 1px solid rgba(211, 166, 37, 0.35);
+  border-radius: 6px;
+  scroll-snap-align: start;
+  transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+/* Eleva ligeramente una tarjeta al pasar el cursor sobre ella. */
+.gryffindor-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--gryffindor-gold);
+}
+
+/* Espacio donde se puede mostrar una imagen local de cada personaje. */
+.character-image {
+  min-height: 230px;
+  display: grid;
+  place-items: center;
+  background-color: var(--gryffindor-dark-red);
+  background-position: center;
+  background-size: cover;
+  border-bottom: 4px solid var(--gryffindor-gold);
+}
+/*
+  Las imágenes se administran desde CSS.
+*/
+.character-harry {
+  background-image:url("img/harry-potter.jpg");
+}
+
+.character-hermione {
+  background-image:url("img/hermione-granger.jpg");
+}
+
+.character-ron {
+  background-image:url("img/ron-weasley.jpg");
+}
+
+.character-minerva {
+  background-image:url("img/minerva-mcgonagall.jpg");
+}
+
+.character-neville {
+  background-image:url("img/neville-longbottom.jpg");
+}
+
+.character-ginny {
+  background-image:url("img/ginny-weasley.jpg");
+}
+
+.character-dumbledore {
+  background-image:url("img/albus-dumbledore.jpg");
+}
+
+.character-sword {
+  background-image:url("img/espada-gryffindor.jpg");
+}
+
+/* Espacio interior del contenido de la tarjeta. */
+.gryffindor-card .card-body {
+  min-height: 285px;
+  padding: 22px;
+}
+
+/* Categoría pequeña colocada sobre cada nombre. */
+.card-category {
+  margin-bottom: 6px;
+  color: var(--gryffindor-light-gold);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+  font-weight: bold;
+  letter-spacing: 0.08rem;
+  text-transform: uppercase;
+}
+
+/* Nombre del personaje o título del dato curioso. */
+.gryffindor-card .card-title {
+  margin-bottom: 12px;
+  color: var(--gryffindor-cream);
+  font-size: 1.45rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Descripción principal de cada tarjeta. */
+.gryffindor-card .card-text {
+  color: #d5c8c1;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+
+/* Texto inferior que resume las cualidades o información del personaje. */
+.card-detail {
+  margin-bottom: 0;
+  padding-top: 14px;
+  color: var(--gryffindor-gold);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+  font-weight: bold;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
+  border-top: 1px solid rgba(211, 166, 37, 0.25);
+}
+
+/* ================================================================
+   5. BOTONES DE NAVEGACIÓN
+   ================================================================ */
+.slider-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  color: #c9bab3;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.85rem;
+}
+
+.slider-button {
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  color: var(--gryffindor-dark-red);
+  font-size: 1.2rem;
+  font-weight: bold;
+  background-color: var(--gryffindor-gold);
+  border: none;
+  border-radius: 50%;
+}
+
+.slider-button:hover,
+.slider-button:focus {
+  color: var(--gryffindor-dark-red);
+  background-color: var(--gryffindor-light-gold);
+}
