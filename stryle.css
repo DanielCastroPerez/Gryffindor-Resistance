@@ -1,0 +1,12 @@
+.navbar-gryffindor {
+	background-color: #7f0909;
+}
+
+.navbar-gryffindor .navbar-brand,
+.navbar-gryffindor .nav-link {
+	color: #d4af37;
+}
+
+.navbar-gryffindor .nav-link:hover {
+	color: #ffd700;
+}
