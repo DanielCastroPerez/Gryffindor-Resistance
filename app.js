@@ -5,7 +5,7 @@ const formEl = document.getElementById("recruitment-form");
 const mainEl = document.querySelector("#album-container");
 //console.log(mainEl);
 
-let albums = [];
+let voluntarios = [];
 //const albums = []; // Segunda opcion
 
 window.addEventListener("load", (event) => {
@@ -28,14 +28,14 @@ formEl.addEventListener("submit", (event) => {
     console.log(formData);
     const dataArray = [... formData];
     console.log(dataArray);
-    const album = Object.fromEntries(dataArray);
-    console.log(album);
-    // Hacer todo lo lo anterior en una linea
+
+    const voluntario = Object.fromEntries(dataArray);
+    console.log(voluntario);
     //const album = Object.fromEntries([... new FormData(formEl)]);
-    //console.log(album);
-    albums.push(album);
-    setLocalStorage("albums", albums);
-    //console.log(albums);
+    console.log(voluntario);
+    voluntarios.push(album);
+    setLocalStorage("voluntarios", voluntarios);
+    console.log("array" + voluntarios);
     // Limpiamos antes de volver a renderizar las cards para evitar la acumulación
     mainEl.innerHTML = "";
     // Renderizamos todas las cards dentro del array de albums
@@ -64,11 +64,11 @@ const setLocalStorage = (key, value) => {
     const textValue = JSON.stringify(value);
     // Paso 2 almacenar
     localStorage.setItem(key, textValue);
-}
+};
 
 const getItemLocalStorage = (key) => {
     if (localStorage.getItem(key) == null) return;
     // Convertimos de texto a lenguaje js
     const data = JSON.parse(localStorage.getItem(key));
     return data;
-}
+};
