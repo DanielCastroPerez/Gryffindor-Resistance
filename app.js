@@ -74,3 +74,49 @@ const getItemLocalStorage = (key) => {
     const data = JSON.parse(localStorage.getItem(key));
     return data;
 }
+
+//todo: Sección de tarjetas del formulario para Bootstrap 
+
+// Formulario y el contenedor de las cards
+const formVol = document.getElementById("recruitment-form");
+const cardsContainer = document.getElementById("cards-voluntarios");
+
+// Guardar información formulario
+let voluntarios = [];
+
+function renderCard(voluntario, contenedor) {
+  const col = document.createElement("div");
+  col.className = "col-12 col-md-6 col-lg-4";
+
+  col.innerHTML = `
+    <div class="card h-100 shadow-sm border-danger">
+      <div class="card-body">
+        <h5 class="card-title text-danger fw-bold">🦁 ${voluntario.nombre}</h5>
+        <h6 class="card-subtitle mb-2 text-muted">${voluntario.correo}</h6>
+        <p class="card-text mb-1"><strong>Edad:</strong> ${voluntario.edad} años</p>
+        <p class="card-text mb-1"><strong>Cualidad:</strong> <span class="badge bg-warning text-dark">${voluntario.cualidad}</span></p>
+        <p class="card-text mt-2 text-secondary"><em>"${voluntario.motivo}"</em></p>
+      </div>
+    </div>
+  `;
+
+  contenedor.appendChild(col);
+}
+
+// Evento de envío
+formVol.addEventListener("submit", (event) => {
+  event.preventDefault();
+
+  const formData = new FormData(formVol);
+  const voluntario = Object.fromEntries(formData);
+
+  voluntarios.push(voluntario);
+
+  cardsContainer.innerHTML = "";
+
+  voluntarios.forEach((item) => {
+    renderCard(item, cardsContainer);
+  });
+
+  formVol.reset();
+});
