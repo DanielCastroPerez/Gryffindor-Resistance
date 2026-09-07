@@ -1,29 +1,23 @@
 // Selectores
-const formEl = document.getElementById("recruitment-form");
-//console.log(formEl);
+const formVol = document.getElementById("recruitment-form");
+console.log(formVol);
 
-const mainEl = document.querySelector("#album-container");
-//console.log(mainEl);
+const sliderVol = document.querySelector(".cards-slider");
+console.log(sliderVol);
 
 let voluntarios = [];
-//const albums = []; // Segunda opcion
 
 window.addEventListener("load", (event) => {
-    if(getItemLocalStorage("albums") == undefined) return;
+    if(getItemLocalStorage("voluntarios") == undefined) return;
     // Transformar a un array mas legible
-    albums =  [... getItemLocalStorage("albums")];
+    voluntarios =  [... getItemLocalStorage("voluntarios")];
     // Que se muestren las cards cuando se cierre y vuelva a abrir la página
-    albums.map((album) => renderCard(album, mainEl));
-    /**
-     * Segunda opcion
-     * getItemLocalStorage("albums").forEach((album) => albums.push(album));
-     * console.log(albums);
-     */
+    voluntarios.map((voluntario) => renderCard(voluntario, sliderVol));
 });
 
-formEl.addEventListener("submit", (event) => {
+formVol.addEventListener("submit", (event) => {
     event.preventDefault();
-    const formData = new FormData(formEl);
+    const formData = new FormData(formVol);
     console.log(formData.get("title")); // Obtener un solo dato
     console.log(formData);
     const dataArray = [... formData];
@@ -33,28 +27,30 @@ formEl.addEventListener("submit", (event) => {
     console.log(voluntario);
     //const album = Object.fromEntries([... new FormData(formEl)]);
     console.log(voluntario);
-    voluntarios.push(album);
+    voluntarios.push(voluntario);
     setLocalStorage("voluntarios", voluntarios);
     console.log("array" + voluntarios);
     // Limpiamos antes de volver a renderizar las cards para evitar la acumulación
-    mainEl.innerHTML = "";
+    sliderVol.innerHTML = "";
     // Renderizamos todas las cards dentro del array de albums
     // Al recorrer el array con map nos aseguramos de no mostrar cards de manera acumulativa
-    albums.map((album) => renderCard(album, mainEl));
-    formEl.reset();
+    voluntarios.map((voluntario) => renderCard(voluntario, sliderVol));
+    formVol.reset();
 });
 
-const renderCard = (albumObject, htmlElement) => {
+const renderCard = (voluntarioObject, htmlElement) => {
 const card = `
-    <div class="card" style="width: 18rem;">
-        <div class="card-body">
-        <h5 class="card-title">${albumObject.title}</h5>
-        <h6 class="card-subtitle mb-2 text-body-secondary">${albumObject.artist}</h6>
-        <p class="card-text">Genero: ${albumObject.genre}</p>
-        <a href="#" class="card-link">Año de lanzamiento: ${albumObject.year}</a>
-        <a href="#" class="card-link">Rating: ${albumObject.rating}</a>
+    <article class="card gryffindor-card" id="card-2">
+        <div class="card-body d-flex flex-column">
+            <p class="card-category">${voluntarioObject.category}</p>
+            <h2 class="card-title">${voluntarioObject.nombre}</h2>
+            <h2 class="card-title">${voluntarioObject.edad}</h2>
+            <p class="card-text">
+            ${voluntarioObject.motivo}
+            </p>
+            <p class="card-detail mt-auto">${voluntarioObject.cualidad}</p>
         </div>
-    </div>
+    </article>
 `;
 htmlElement.insertAdjacentHTML("beforeend", card);
 };
