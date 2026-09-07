@@ -227,5 +227,5 @@ body, html {
 .product{
   width: 100%;
   max-width: 18rem;
-  margin: 0 auto;
+  margin: 30px;
 }
