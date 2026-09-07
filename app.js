@@ -2,7 +2,7 @@
 const formVol = document.getElementById("recruitment-form");
 console.log(formVol);
 
-const sliderVol = document.querySelector(".cards-slider");
+const sliderVol = document.querySelector(".cards-slider"); //.cards-slider
 console.log(sliderVol);
 
 let voluntarios = [];
@@ -51,6 +51,15 @@ const card = `
             <p class="card-detail mt-auto">${voluntarioObject.cualidad}</p>
         </div>
     </article>
+     <div class="card gryffindor-card h-100 shadow-sm border-danger">
+      <div class="card-body">
+        <h5 class="card-title text-danger fw-bold">🦁 ${voluntarioObject.nombre}</h5>
+        <h6 class="card-subtitle mb-2 text-muted">${voluntarioObject.correo}</h6>
+        <p class="card-text mb-1"><strong>Edad:</strong> ${voluntarioObject.edad} años</p>
+        <p class="card-text mb-1"><strong>Cualidad:</strong> <span class="badge bg-warning text-dark">${voluntarioObject.cualidad}</span></p>
+        <p class="card-text mt-2 text-secondary"><em>"${voluntarioObject.motivo}"</em></p>
+      </div>
+    </div>
 `;
 htmlElement.insertAdjacentHTML("beforeend", card);
 };
