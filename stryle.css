@@ -1,0 +1,25 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.fondo-responsivo {
+    background-image: url('assets/sala-común-gryffindor.jpg');  /*Imagen de fondo*/
+    background-position: center center;     /*Centra la imagen*/
+    background-size: cover;         /*Hace que sea responsiva, cubre mantiendo la proporción*/
+    background-repeat: no-repeat;        /*Evita que la imagen se repita*/
+    min-height: 100vh;          /*Asegura que el fondo ocupe 100% del alto de la pantalla*/
+}
+.navbar-gryffindor {
+	background-color: #7f0909;
+}
+
+.navbar-gryffindor .navbar-brand,
+.navbar-gryffindor .nav-link {
+	color: #d4af37;
+}
+
+.navbar-gryffindor .nav-link:hover {
+	color: #ffd700;
+}
