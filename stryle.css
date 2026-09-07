@@ -1,0 +1,34 @@
+:root {
+  --gryffindor-rojo: #740001;
+  --gryffindor-rojo-oscuro: #3d0000;
+  --gryffindor-dorado: #d3a625;
+  --gryffindor-dorado-claro: #eecc73;
+}
+
+.recruitment-card {
+  background-color: #faf6ec;
+  border: 2px solid var(--gryffindor-dorado);
+  border-radius: 10px;
+}
+
+.recruitment-title {
+  color: var(--gryffindor-rojo);
+  font-weight: bold;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--gryffindor-dorado);
+  box-shadow: 0 0 0 0.2rem rgba(211, 166, 37, 0.35);
+}
+
+.recruitment-btn {
+  background-color: var(--gryffindor-rojo);
+  color: white;
+  border: none;
+}
+
+.recruitment-btn:hover {
+  background-color: var(--gryffindor-rojo-oscuro);
+  color: var(--gryffindor-dorado-claro);
+}
