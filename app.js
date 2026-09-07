@@ -204,3 +204,4 @@ const renderCard = (albumObject, htmlElement) => {
     `;
     htmlElement.insertAdjacentHTML("beforeend", card);
 }
+
