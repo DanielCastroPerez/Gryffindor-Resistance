@@ -17,7 +17,7 @@
   </head>
   <body>
     <!--INICIO NAVAR-->
-    <nav class="navbar navbar-expand-lg navbar-gryffindor">
+    <nav class="navbar navbar-expand-lg navbar-gryffindor sticky-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="#"
           >ORDEN DE GRYFFINDOR: EL PORTAL DEL LEON</a
@@ -36,7 +36,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"
+              <a class="nav-link active" aria-current="page" href="index.html"
                 >INICIO
               </a>
             </li>
@@ -48,7 +48,7 @@
               <a class="nav-link" href="#">RECLUTAMIENTO</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">SALA COMUN</a>
+              <a class="nav-link" href="store.html">SALA COMUN</a>
             </li>
           </ul>
         </div>
@@ -57,13 +57,15 @@
     <!--FIN NAVAR-->
         <div class="fondo-responsivo">
           <!--!INICIO DE BANNER (MIREYA)-->
-  <div class="container-fluid row">
-    <div class="col-12 col-lg-7"><!--sección izquierda del banner-->
+  <div class="container-fluid row p-5 m-0 fondo-banner tamanio-banner">
+    <div class="col-12 col-lg-7 d-flex flex-column align-items-start"><!--sección izquierda del banner-->
       <h3 class="rosa">Casa fundada por Godric Gryffindor</h3>
       <h1 class="titulo">Donde habitan los <span class="valiente">valientes</span> de corazón</h1>
-      <p class="color-texto">Adéntrate en los salones custodiados por el león alado. Buscamos almas con temple indoblegable, caballerosidad incorruptible y laa determinación ardiente de aquellos que no retroceden jamás ante las sombras</p>
-      <button type="button" class="btn btn-prueba">Iniciar prueba de reclutamiento</button>
-      <button type="button" class="btn btn-heroes">Conoce a nuestros héroes</button>
+      <p class="color-texto ancho-texto">Adéntrate en los salones custodiados por el león alado. Buscamos almas con temple indoblegable, caballerosidad incorruptible y laa determinación ardiente de aquellos que no retroceden jamás ante las sombras</p>
+      <div class="d-flex flex-column align-items-start gap-2">
+        <button type="button" class="btn btn-prueba">Iniciar prueba de reclutamiento</button>
+        <button type="button" class="btn btn-heroes">Conoce a nuestros héroes</button>
+      </div>
     </div><!--sección izquierda del banner-->
     <div class="col-12 col-lg-5"><!--sección derecha del banner-->
       <div><!--contenedor godric-->
@@ -251,7 +253,133 @@
     </main>
     <!-- ?FIN DE CODIGO DE LAS CARDS-->
 
+    <!--todo: Contenedor de las cards -->
+    <main id="contendor-voluntarios" class="container my-5">
+      <h2 class="text-center text-white mb-4">Voluntarios Reclutados</h2>
+      <div class="row g-4" id="cards-voluntarios"></div>
+    </main>
+
     <!-- !INICIO DE PERFIL-->
+    <!-- Formulario de reclutamiento -->
+<div class="container py-5">
+  <div class="row justify-content-center">
+    <div class="col-12 col-md-8 col-lg-6">
+
+      <div class="card recruitment-card shadow">
+        <div class="card-body p-4 p-md-5">
+
+          <div class="text-center mb-4">
+            <h1 class="recruitment-title">Únete a Gryffindor</h1>
+            <p class="text-muted">
+              ¿Tienes el valor y la audacia de un león? Completa el formulario y forma parte de nuestra casa.
+            </p>
+          </div>
+
+          <form id="recruitment-form" novalidate>
+
+            <div class="mb-3">
+              <label for="nombre" class="form-label">Nombre completo</label>
+              <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ej: Hermione Granger" required>
+              <div class="invalid-feedback">Por favor ingresa tu nombre.</div>
+            </div>
+
+            <div class="mb-3">
+              <label for="correo" class="form-label">Correo electrónico</label>
+              <input type="email" class="form-control" id="correo" name="correo" placeholder="nombre@ejemplo.com" required>
+              <div class="invalid-feedback">Ingresa un correo válido.</div>
+            </div>
+
+            <div class="mb-3">
+              <label for="edad" class="form-label">Edad</label>
+              <input type="number" class="form-control" id="edad" name="edad" min="11" max="120" placeholder="Ej: 17" required>
+              <div class="invalid-feedback">Ingresa una edad válida (mínimo 11, la edad de admisión a Hogwarts).</div>
+            </div>
+
+            <div class="mb-3">
+              <label for="cualidad" class="form-label">¿Qué cualidad te describe mejor?</label>
+              <select class="form-select" id="cualidad" name="cualidad" required>
+                <option value="" selected disabled>Selecciona una opción</option>
+                <option value="valentia">Valentía</option>
+                <option value="lealtad">Lealtad</option>
+                <option value="audacia">Audacia</option>
+                <option value="nobleza">Nobleza de corazón</option>
+              </select>
+              <div class="invalid-feedback">Selecciona una cualidad.</div>
+            </div>
+
+            <div class="mb-4">
+              <label for="motivo" class="form-label">¿Por qué quieres unirte a Gryffindor?</label>
+              <textarea class="form-control" id="motivo" name="motivo" rows="3" placeholder="Cuéntanos brevemente tu motivo..." required></textarea>
+              <div class="invalid-feedback">Cuéntanos tu motivo, aunque sea breve.</div>
+            </div>
+
+            <div class="d-grid">
+              <button type="submit" class="btn recruitment-btn btn-lg">Enviar solicitud</button>
+            </div>
+
+            <div id="form-mensaje" class="mt-3 text-center"></div>
+
+          </form>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- Fin formulario de reclutamiento -->
+
+  <!-- FOOTER -->
+  <footer class="custom-footer mt-5">
+    <div class="container-fluid px-2">
+      <div class="row g-2 align-items-center">
+        
+        <!-- Columna Izquierda: Redes Sociales y Copyright -->
+        <div class="col-12 col-md-7 col-lg-8">
+          <div class="wood-panel d-flex align-items-center flex-wrap gap-2">
+            <div class="social-icons">
+              
+              <!-- TikTok -->
+              <a href="#" class="social-icon" title="TikTok">
+                <img src="assets/tiktok.png" alt="TikTok">
+              </a>
+              
+              <!-- Instagram -->
+              <a href="#" class="social-icon" title="Instagram">
+                <img src="assets/insta.png" alt="Instagram">
+              </a>
+              
+              <!-- Twitter (X) -->
+              <a href="#" class="social-icon" title="Twitter">
+                <img src="assets/twit.png" alt="Twitter">
+              </a>
+              
+              <!-- Facebook -->
+              <a href="#" class="social-icon" title="Facebook">
+                <img src="assets/face.png" alt="Facebook">
+              </a>
+              
+            </div>
+            <span class="golden-text ms-2">© 2026 Gryffindor-Resistance. Derechos reservados.</span>
+          </div>
+        </div>
+
+        <!-- Columna Derecha: Enlaces del menú -->
+        <div class="col-12 col-md-5 col-lg-4">
+          <div class="wood-panel d-flex justify-content-end align-items-center">
+            <div class="footer-links">
+              <a href="#">Links</a>
+              <a href="#">Donation</a>
+              <a href="#">Contacto</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+
     <!--!FIN DE PERFIL-->
  </div>
     <!-- Link de bootstrap -->
