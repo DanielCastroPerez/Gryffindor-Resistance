@@ -2,7 +2,7 @@
 const formVol = document.getElementById("recruitment-form");
 console.log(formVol);
 
-const sliderVol = document.querySelector(".cards-slider");
+const sliderVol = document.querySelector("#contendor-voluntarios");
 console.log(sliderVol);
 
 let voluntarios = [];
@@ -40,17 +40,15 @@ formVol.addEventListener("submit", (event) => {
 
 const renderCard = (voluntarioObject, htmlElement) => {
 const card = `
-    <article class="card gryffindor-card" id="card-2">
-        <div class="card-body d-flex flex-column">
-            <p class="card-category">${voluntarioObject.category}</p>
-            <h2 class="card-title">${voluntarioObject.nombre}</h2>
-            <h2 class="card-title">${voluntarioObject.edad}</h2>
-            <p class="card-text">
-            ${voluntarioObject.motivo}
-            </p>
-            <p class="card-detail mt-auto">${voluntarioObject.cualidad}</p>
-        </div>
-    </article>
+     <div class="card gryffindor-card h-100 shadow-sm border-danger">
+      <div class="card-body">
+        <h5 class="card-title text-danger fw-bold">🦁 ${voluntarioObject.nombre}</h5>
+        <h6 class="card-subtitle mb-2 text-muted">${voluntarioObject.correo}</h6>
+        <p class="card-text mb-1"><strong>Edad:</strong> ${voluntarioObject.edad} años</p>
+        <p class="card-text mb-1"><strong>Cualidad:</strong> <span class="badge bg-warning text-dark">${voluntarioObject.cualidad}</span></p>
+        <p class="card-text mt-2 text-secondary"><em>"${voluntarioObject.motivo}"</em></p>
+      </div>
+    </div>
 `;
 htmlElement.insertAdjacentHTML("beforeend", card);
 };
