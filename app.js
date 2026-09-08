@@ -42,14 +42,14 @@ formVol.addEventListener("submit", (event) => {
 
 const renderCard = (voluntarioObject, htmlElement) => {
 const card = `
-     <div class="card gryffindor-card h-100 shadow-sm border-danger">
-      <div class="card-body">
-        <h5 class="card-title text-danger fw-bold">🦁 ${voluntarioObject.nombre}</h5>
-        <h6 class="card-subtitle mb-2 text-muted">${voluntarioObject.correo}</h6>
-        <p class="card-text mb-1"><strong>Edad:</strong> ${voluntarioObject.edad} años</p>
-        <p class="card-text mb-1"><strong>Cualidad:</strong> <span class="badge bg-warning text-dark">${voluntarioObject.cualidad}</span></p>
-        <p class="card-text mt-2 text-secondary"><em>"${voluntarioObject.motivo}"</em></p>
-      </div>
+    <div class="card gryffindor-card h-100 shadow-sm border-danger">
+        <div class="card-body">
+            <h5 class="card-title text-danger fw-bold">🦁 ${voluntarioObject.nombre}</h5>
+            <h6 class="card-subtitle mb-2 text-muted">${voluntarioObject.correo}</h6>
+            <p class="card-text mb-1"><strong>Edad:</strong> ${voluntarioObject.edad} años</p>
+            <p class="card-text mb-1"><strong>Cualidad:</strong> <span class="badge bg-warning text-dark">${voluntarioObject.cualidad}</span></p>
+            <p class="card-text mt-2 text-secondary"><em>"${voluntarioObject.motivo}"</em></p>
+        </div>
     </div>
 `;
 htmlElement.insertAdjacentHTML("beforeend", card);
