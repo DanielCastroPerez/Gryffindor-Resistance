@@ -7,6 +7,7 @@ console.log(sliderVol);
 
 let voluntarios = [];
 
+if (formVol) {
 window.addEventListener("load", (event) => {
     if(getItemLocalStorage("voluntarios") == undefined) return;
     // Transformar a un array mas legible
@@ -37,20 +38,10 @@ formVol.addEventListener("submit", (event) => {
     voluntarios.map((voluntario) => renderCard(voluntario, sliderVol));
     formVol.reset();
 });
+}
 
 const renderCard = (voluntarioObject, htmlElement) => {
 const card = `
-    <article class="card gryffindor-card" id="card-2">
-        <div class="card-body d-flex flex-column">
-            <p class="card-category">${voluntarioObject.category}</p>
-            <h2 class="card-title">${voluntarioObject.nombre}</h2>
-            <h2 class="card-title">${voluntarioObject.edad}</h2>
-            <p class="card-text">
-            ${voluntarioObject.motivo}
-            </p>
-            <p class="card-detail mt-auto">${voluntarioObject.cualidad}</p>
-        </div>
-    </article>
      <div class="card gryffindor-card h-100 shadow-sm border-danger">
       <div class="card-body">
         <h5 class="card-title text-danger fw-bold">🦁 ${voluntarioObject.nombre}</h5>

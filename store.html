@@ -68,68 +68,68 @@
         <div class="container-fluid my-4">
         <div class="row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 justify-content-center g-4">
         <!--? Card image 1 -->
-            <div class="card product col">
+            <div class="card product col" data-name="Bufanda Gryffindor" data-price="600">
             <img src="assets/bufanda.jpg" class="img-fluid object-fit-contain d-block mx-auto" style="max-width: 250px; max-height: 150px;" alt="Imagen adaptada">
             <div class="card-body">
                 <h5 class="card-title">Bufanda Griffindor $600</h5>
                 <div class="input-group mb-3">
-                    <button class="btn btn-primary" type="button" id="button-addon1">Agregar</button>
-                    <input type="text" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
+                    <button class="btn btn-primary add-to-cart" type="button">Agregar</button>
+                    <input type="number" class="form-control product-quantity" min="1" value="1" aria-label="Cantidad de Bufanda Gryffindor">
                 </div>
             </div>
             </div>
         <!--? Card image 2 -->
-            <div class="card product col">
+            <div class="card product col" data-name="Capa Gryffindor" data-price="2000">
             <img src="assets/capa.jpg" class="img-fluid object-fit-contain d-block mx-auto" style="max-width: 250px; max-height: 150px;" alt="Imagen adaptada">
             <div class="card-body">
                 <h5 class="card-title">Capa Griffindor $2000</h5>
                 <div class="input-group mb-3">
-                    <button class="btn btn-primary" type="button" id="button-addon1">Agregar</button>
-                    <input type="text" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
+                    <button class="btn btn-primary add-to-cart" type="button">Agregar</button>
+                    <input type="number" class="form-control product-quantity" min="1" value="1" aria-label="Cantidad de Capa Gryffindor">
                 </div>
             </div>
             </div>
             <!--? Card image 3 -->
-            <div class="card product col">
+            <div class="card product col" data-name="Nimbus 2000" data-price="4000">
             <img src="assets/Nimbus2000.jpg" class="img-fluid object-fit-contain d-block mx-auto" style="max-width: 250px; max-height: 150px;" alt="Imagen adaptada">
             <div class="card-body">
                 <h5 class="card-title">Nimbus 2000 $4000</h5>
                 <div class="input-group mb-3">
-                    <button class="btn btn-primary" type="button" id="button-addon1">Agregar</button>
-                    <input type="text" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
+                    <button class="btn btn-primary add-to-cart" type="button">Agregar</button>
+                    <input type="number" class="form-control product-quantity" min="1" value="1" aria-label="Cantidad de Nimbus 2000">
                 </div>
             </div>
             </div>
             <!--? Card image 4 -->
-            <div class="card product col">
+            <div class="card product col" data-name="Peluche Gryffindor" data-price="400">
             <img src="assets/oso.jpg" class="img-fluid object-fit-contain d-block mx-auto" style="max-width: 250px; max-height: 150px;" alt="Imagen adaptada">
             <div class="card-body">
                 <h5 class="card-title">Peluche Griffindor $400</h5>
                 <div class="input-group mb-3">
-                    <button class="btn btn-primary" type="button" id="button-addon1">Agregar</button>
-                    <input type="text" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
+                    <button class="btn btn-primary add-to-cart" type="button">Agregar</button>
+                    <input type="number" class="form-control product-quantity" min="1" value="1" aria-label="Cantidad de Peluche Gryffindor">
                 </div>
             </div>
             </div>
             <!--? Card image 5 -->
-            <div class="card product col">
+            <div class="card product col" data-name="Uniforme Gryffindor" data-price="2000">
             <img src="assets/UniformeGryffindor.jpg" class="img-fluid object-fit-contain d-block mx-auto" style="max-width: 250px; max-height: 150px;" alt="Imagen adaptada">
             <div class="card-body">
                 <h5 class="card-title">Uniforme Griffindor $2000</h5>
                 <div class="input-group mb-3">
-                    <button class="btn btn-primary" type="button" id="button-addon1">Agregar</button>
-                    <input type="text" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
+                    <button class="btn btn-primary add-to-cart" type="button">Agregar</button>
+                    <input type="number" class="form-control product-quantity" min="1" value="1" aria-label="Cantidad de Uniforme Gryffindor">
                 </div>
             </div>
             </div>
             <!--? Card image 6 -->
-            <div class="card product col">
+            <div class="card product col" data-name="Varitas Ollivander" data-price="1000">
             <img src="assets/VARITAS.jpg" class="img-fluid object-fit-contain d-block mx-auto" style="max-width: 250px; max-height: 150px;" alt="Imagen adaptada">
             <div class="card-body">
                 <h5 class="card-title">Varitas Olivander $1000</h5>
                 <div class="input-group mb-3">
-                    <button class="btn btn-primary" type="button" id="button-addon1">Agregar</button>
-                    <input type="text" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
+                    <button class="btn btn-primary add-to-cart" type="button">Agregar</button>
+                    <input type="number" class="form-control product-quantity" min="1" value="1" aria-label="Cantidad de Varitas Ollivander">
                 </div>
             </div>
             </div>
@@ -137,10 +137,24 @@
 
         </div>
         </div>
+<!-- Resumen -->
+<div class="card text-bg-danger mb-3" style="max-width: 18rem;">
+    <div class="card-header">Resumen de compra</div>
+    <div class="card-body">
+        <h5 class="card-title">Tu carrito está vacío.</h5>
+        <div class="cart-total">
+            <strong>Total:</strong>
+            <span id="cart-total">$0</span>
+        </div>
+        <div class="cart-actions">
+            <button id="clear-cart" class="btn btn-outline-light" type="button">Limpiar carrito</button>
+            <button id="buy-cart" class="btn btn-warning" type="button">Comprar</button>
+        </div>
+    </div>
+</div>
+<!-- Resumen -->
     <!-- Carrito codigo de christopher ⚡-->
 
-        <!-- !INICIO DE PERFIL-->
-        <!--!FIN DE PERFIL-->
     </div>
         <!-- Link de bootstrap -->
         <script
