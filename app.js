@@ -2,11 +2,12 @@
 const formVol = document.getElementById("recruitment-form");
 console.log(formVol);
 
-const sliderVol = document.querySelector("#contendor-voluntarios");
+const sliderVol = document.querySelector("#cards-voluntarios");
 console.log(sliderVol);
 
 let voluntarios = [];
 
+if (formVol) {
 window.addEventListener("load", (event) => {
     if(getItemLocalStorage("voluntarios") == undefined) return;
     // Transformar a un array mas legible
@@ -37,6 +38,7 @@ formVol.addEventListener("submit", (event) => {
     voluntarios.map((voluntario) => renderCard(voluntario, sliderVol));
     formVol.reset();
 });
+}
 
 const renderCard = (voluntarioObject, htmlElement) => {
 const card = `

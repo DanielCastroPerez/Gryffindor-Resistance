@@ -1,3 +1,4 @@
+
 @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&family=Macondo+Swash+Caps&display=swap");
 
 :root {
@@ -165,8 +166,7 @@ button, a {
     max-width: 1200px;
     padding: 0 1.5rem 2.3rem;
     margin: -5.4rem auto 0;
-    margin-top: 5rem;
-    margin-bottom: 4rem;
+    margin-top: 4rem;
 }
 
 .profile-header-content {
@@ -221,7 +221,7 @@ button, a {
     width: 2.5rem;
     height: 2.5rem;
     background: #00d95a;
-    border: 0.19rem solid #0e0e0e;
+    border: 0.19rem solid #10cf0a;
     border-radius: 50%;
     box-shadow: 0 0 0.8rem rgba(0, 217, 90, 0.85);
     animation: statusPulse 2.2s ease-in-out infinite;

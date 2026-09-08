@@ -122,7 +122,7 @@ body, html {
     background-position: center center;     /*Centra la imagen*/
     background-size: cover;         /*Hace que sea responsiva, cubre mantiendo la proporción*/
     background-repeat: no-repeat;        /*Evita que la imagen se repita*/
-    min-height: 100vh;          /*Asegura que el fondo ocupe 100% del alto de la pantalla*/
+    /*min-height: 100vh;          Asegura que el fondo ocupe 100% del alto de la pantalla*/
 }
 .navbar-gryffindor {
 	background-color: #7f0909;
@@ -137,6 +137,66 @@ body, html {
 	color: #ffd700;
 }
 
+
+/*Card Godridc Gryffindor*/
+.card-godric {
+    background-color: #272121;
+    padding: 1.5rem;
+    border-radius: 5px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+    color: #fff;
+}
+
+.godric-imagen {
+    max-width: 300px;
+    border-radius: 4px;
+}
+
+.titulo-dorado{
+    color: #e5b95b;
+    font-weight: bold;
+    font-size: 1.7rem;
+    letter-spacing: 1.5px;
+}
+
+.etiqueta-roja{
+    background-color: #7f0909;
+    padding: 5px;
+    letter-spacing: 2px;
+}
+
+.frase-cita{
+    font-style: italic;
+    color: #c9c1c1;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin: 10px 0;
+}
+
+.caja-elementos-godric{
+    background-color: #141010;
+    padding: 15px 5px;
+    align-items: center;
+}
+
+.borde-derecho{
+    border-right: 1px solid #4a3b3b;
+}
+
+.titulo-stat{
+    display: block;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #9c9292;
+    font-weight:650;
+}
+
+.valor-stat {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
     /* Estilos del Footer */
     .custom-footer {
       background-color: #1a0b0b; /* Color de fondo base muy oscuro */
@@ -224,3 +284,214 @@ body, html {
       text-decoration: underline;
     }
 
+.product{
+  width: 100%;
+  max-width: 18rem;
+  margin: 30px;
+}
+
+
+body {
+    background-color: #0d0d0d;
+    color: #e6e6e6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-gryffindor {
+    background-color: #580000 !important;
+    border-bottom: 0.125rem solid #b38f00;
+    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.6);
+}
+
+.navbar-gryffindor .navbar-brand {
+    color: #ffd700 !important;
+    font-weight: 800;
+    letter-spacing: 0.0625rem;
+    text-shadow: 0.0625rem 0.0625rem 0.1875rem rgba(0, 0, 0, 0.8);
+}
+
+.navbar-gryffindor .nav-link {
+    color: #f2f2f2 !important;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+.navbar-gryffindor .nav-link:hover, 
+.navbar-gryffindor .nav-link.active {
+    color: #ffd700 !important;
+    text-shadow: 0 0 0.5rem rgba(255, 215, 0, 0.4);
+}
+
+.profile-header-container {
+    position: relative;
+    margin-bottom: 6rem;
+}
+
+#banner {
+    width: 100%;
+    height: 18rem;
+    object-fit: cover;
+    border-bottom: 0.2rem solid #b38f00;
+}
+
+#descr {
+    padding-top: 3rem;
+}
+
+.profile-user-section {
+    position: relative;
+}
+
+.profile-user-row {
+    position: absolute;
+    top: -9rem;
+    left: 0;
+    right: 0;
+    margin: 0;
+}
+
+#foto {
+    width: 15rem;
+    height: 15rem;
+    object-fit: cover;
+    border: 0.3rem solid #b38f00;
+    background-color: #121212;
+    z-index: 10;
+    border-radius: 50%;
+    box-shadow: 0 0.3rem 0.9rem rgba(0, 0, 0, 0.8);
+    display: block;
+    margin-left: 1.5rem;
+}
+
+#descripcion {
+    padding-top: 3rem;
+}
+
+.profile-details {
+    padding-top: 3.5rem;
+}
+
+.profile-info-bar {
+    background: linear-gradient(135deg, #1a1a1a 0%, #260000 100%);
+    border: 0.1rem solid #4a1515;
+    border-radius: 0.7rem;
+    padding: 1.2rem;
+    box-shadow: 0 0.2rem 0.9rem rgba(0, 0, 0, 0.5);
+    margin-top: 0.6rem;
+}
+
+.card {
+    background-color: #161616 !important;
+    color: #f0f0f0 !important;
+    border: 0.1rem solid #331111 !important;
+    border-radius: 0.7rem;
+    box-shadow: 0 0.2rem 0.7rem rgba(0, 0, 0, 0.4);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    border-color: #5c1f1f !important;
+    box-shadow: 0 0.3rem 1.1rem rgba(179, 143, 0, 0.15);
+}
+
+.card-title {
+    color: #ffd700;
+    font-weight: 700;
+    border-bottom: 0.1rem solid #331111;
+    padding-bottom: 0.5rem;
+    text-align: center;
+}
+
+.btn-danger {
+    background-color: #740001 !important;
+    border-color: #9b111e !important;
+}
+
+.btn-danger:hover {
+    background-color: #530001 !important;
+}
+
+.btn-warning {
+    background-color: #b38f00 !important;
+    border-color: #ffd700 !important;
+    color: #0a0a0a !important;
+    font-weight: bold;
+}
+
+.btn-warning:hover {
+    background-color: #ffd700 !important;
+}
+
+.form-control {
+    background-color: #0d0d0d !important;
+    color: #fff !important;
+    border: 0.1rem solid #4a1515 !important;
+}
+
+.form-control:focus {
+    background-color: #0d0d0d !important;
+    color: #fff !important;
+    border-color: #ffd700 !important;
+    box-shadow: 0 0 0 0.2rem rgba(179, 143, 0, 0.25);
+}
+
+.form-control::placeholder {
+    color: #a6a6a6 !important;
+    opacity: 1;
+}
+
+.card-body p.text-muted, .card-body small, .card-body .text-muted {
+    color: #b0b0b0 !important;
+}
+
+.card .d-flex.flex-column.gap-2 img.img-fluid {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    padding: 0;
+    border-radius: 0.5rem;
+    border: 0.1rem solid #4a1515;
+}
+
+.card.shadow-sm.mb-3 img.img-fluid {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+    border: 0.1rem solid #4a1515;
+}
+
+.card .d-flex img.rounded-circle {
+    width: 2.8rem;
+    height: 2.8rem;
+    object-fit: cover;
+    border: 0.1rem solid #b38f00;
+}
+
+@media (min-width: 768px) {
+    .profile-details {
+        padding-left: 1.2rem;
+        padding-top: 2.5rem;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .profile-user-row {
+        position: relative;
+        top: auto;
+    }
+    #foto {
+        margin: -5rem auto 1rem auto;
+        display: block;
+    }
+    .profile-details {
+        padding-top: 0;
+        text-align: center;
+    }
+    .profile-header-container {
+        margin-bottom: 2rem;
+    }
+}
