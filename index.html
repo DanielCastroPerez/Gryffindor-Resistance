@@ -1,5 +1,4 @@
-<!doctype html>
-<html lang="en"> 
+<html lang="en">#########
   <head> 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -59,19 +58,32 @@
       <h1 class="titulo">Donde habitan los <span class="valiente">valientes</span> de corazón</h1>
       <p class="color-texto ancho-texto">Adéntrate en los salones custodiados por el león alado. Buscamos almas con temple indoblegable, caballerosidad incorruptible y laa determinación ardiente de aquellos que no retroceden jamás ante las sombras</p>
       <div class="d-flex flex-column align-items-start gap-2">
-        <button type="button" class="btn btn-prueba">Iniciar prueba de reclutamiento</button>
-        <button type="button" class="btn btn-heroes">Conoce a nuestros héroes</button>
+        <a href="#formulario" class="btn btn-prueba">Iniciar prueba de reclutamiento</a>
+        <a href="#personajes" class="btn btn-heroes">Conoce a nuestros héroes</a>
       </div>
     </div><!--sección izquierda del banner-->
-    <div class="col-12 col-lg-5"><!--sección derecha del banner-->
-      <div><!--contenedor godric-->
-        <h4 class="amarillo">Godric Gryffindor</h4>
-        <p class="color-texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, veniam enim.</p>
-        <div>
-          <p class="color-texto">Elemento</p><span class="rosa">fuego</span>
-          <p class="color-texto">Reliquia</p><span class="amarillo">Espada y Rubí</span>
-          <p class="color-texto">Soberano</p><span class="blanco">León Dorado</span>
-        </div>
+      <div class="col-12 col-lg-4"><!--sección derecha del banner-->
+                        <div class="card-godric text-center"><!--contenedor godric-->
+                            <img src="assets/Godric_Griff.jpg" alt="Godric Gryffindor" class="godric-imagen">
+                            <h4 class="titulo-dorado mt-4 etiqueta-roja">Godric Gryffindor</h4>
+                            <p class="color-texto frase-cita">"Forti Animo Estote"</p>
+                            <div class="caja-elementos-godric row mx-0 mt-4">
+                                <div class="col-4 px-0 borde-derecho">
+                                    <span class="titulo-stat">Valores</span>
+                                    <span class="valor-stat rosa">Valentia y Coraje</span>
+                                </div>
+
+                                <div class="col-4 px-0 borde-derecho">
+                                    <span class="titulo-stat">Reliquia</span>
+                                    <span class="valor-stat blanco">Espada</span>
+                                </div>
+
+                                <div class="col-4 px-0">
+                                    <span class="titulo-stat">Emblema</span>
+                                    <span class="valor-stat amarillo">León Dorado</span>
+                                </div>
+                            </div>
+                                </div>
       </div><!--contenedor godric-->
     </div><!--sección derecha del banner-->
   </div><!--contenedor de elementos banner-->
@@ -88,7 +100,7 @@
 
     <!--?Codigo de las cards-->
  <!--? Encabezado de la sección. -->
-        <header class="row align-items-end gy-3 mb-4">
+        <header id="personajes" class="row align-items-end gy-3 mb-4">
           <div class="col-lg-7">
             <!--? Texto pequeño que identifica la temática. -->
             <p class="section-label mb-2">Legado inolvidable</p>
@@ -249,9 +261,15 @@
     </main>
     <!-- ?FIN DE CODIGO DE LAS CARDS-->
 
+    <!--todo: Contenedor de las cards -->
+    <main id="contendor-voluntarios" class="container my-5">
+      <h2 class="text-center text-white mb-4">Voluntarios Reclutados</h2>
+      <div class="row g-4" id="cards-voluntarios"></div>
+    </main>
+
     <!-- !INICIO DE PERFIL-->
     <!-- Formulario de reclutamiento -->
-<div class="container py-5">
+<div id="formulario" class="container py-5">
   <div class="row justify-content-center">
     <div class="col-12 col-md-8 col-lg-6">
 
