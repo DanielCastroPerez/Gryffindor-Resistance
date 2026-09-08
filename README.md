@@ -72,11 +72,6 @@ También puedes utilizar la extensión **Live Server** de Visual Studio Code par
 
 El proyecto funciona completamente del lado del cliente. No cuenta con servidor, base de datos, autenticación ni pagos reales. Los registros de reclutamiento solamente están disponibles en el navegador donde fueron creados.
 
-## Integrantes
-
-- Devani Damaris Moreno Domínguez
-- David Fernández Brito
-- Fernando Angel Chalqueño Nava
 
 ## Creado por
 - Devani Damaris Moreno Domínguez   (FrontEnd)
