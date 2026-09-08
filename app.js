@@ -2,7 +2,7 @@
 const formVol = document.getElementById("recruitment-form");
 console.log(formVol);
 
-const sliderVol = document.querySelector(".cards-slider");
+const sliderVol = document.querySelector("#cards-voluntarios");
 console.log(sliderVol);
 
 let voluntarios = [];
