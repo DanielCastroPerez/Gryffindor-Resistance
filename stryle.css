@@ -284,3 +284,8 @@ body, html {
       text-decoration: underline;
     }
 
+.product{
+  width: 100%;
+  max-width: 18rem;
+  margin: 30px;
+}
