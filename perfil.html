@@ -1,187 +1,224 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GryffindorResistanceProfile</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="stryle.css">
+    <meta name="description" content="Perfil de Fennel Hawthorn en la Orden de Gryffindor">
+    <meta name="theme-color" content="#580000">
+    <title>Fennel Hawthorn | Orden de Gryffindor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&family=Macondo+Swash+Caps&display=swap">
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-<nav class="navbar navbar-expand-lg navbar-gryffindor">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#"
-          >ORDEN DE GRYFFINDOR: EL PORTAL DEL LEON</a
-        >
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="/index.html"
-                >INICIO
+    <nav class="navbar navbar-expand-lg navbar-gryffindor sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/index.html">
+                ORDEN DE GRYFFINDOR: EL PORTAL DEL LEÓN
               </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="perfil.html"
-                >PERFIL
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="index.html#formulario">RECLUTAMIENTO</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="store.html">TIENDA</a>
-            </li>
-          </ul>
-        </div>
-      </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Abrir menú de navegación">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html">INICIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">PERFIL</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">RECLUTAMIENTO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">SALA COMÚN</a>
+                    </li>
+                </ul>
+            </div>
     </nav>
 
-<div class="profile-header-container">
-    <div id="bannerPhoto">
-        <img id="banner" src="/assets/banner.jpg" class="img-fluid" alt="banner">
-    </div>
-    <div class="container profile-user-section">
-        <div id="descr" class="row align-items-center profile-user-row">
-            <div class="col-md-3 position-relative text-center text-md-start">
-                <img id="foto" src="/assets/perfil.jpg" class="img-fluid rounded-circle shadow-lg" alt="Foto de perfil">
-            </div>
-            <div class="col-md-9 profile-details">
-                <div class="d-flex flex-wrap justify-content-between align-items-center gap-3 w-100">
-                    <div>
-                        <h2 class="text-white mb-0 fw-bold">Fennel Hawthorn</h2>
-                        <h4 class="text-warning fs-5 mb-0">@fennel_potions</h4>
-                    </div>
-                    <div class="d-flex align-items-center gap-2 flex-wrap">
-                        <span class="badge bg-danger px-3 py-2 fs-6">Gryffindor</span>
-                        <button type="button" class="btn btn-outline-success btn-sm position-relative text-white">
-                            En línea
-                            <span class="position-absolute top-0 start-100 translate-middle p-1 bg-success border border-light rounded-circle"></span>
-                        </button>
-                        <button type="button" class="btn btn-danger btn-sm position-relative">
-                            Lechuzas
-                            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning text-dark">14+</span>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+    <section id="bannerPhoto">
+        <img
+            id="banner"
+            src="/assets/banner.jpg"
+            alt="Laboratorio de pociones de Gryffindor">
+    </section>
 
-<div id="descripcion" class="container mb-4">
-    <div class="row g-3">
-      <div class="col-sm-6">
-        <div class="card h-100">
-          <div class="card-body">
-            <h5 class="card-title">Descripción</h5>
-            <p class="card-text">
-            ✨ Alquimista en potencia y exploradora de mazmorras. Obsesionada con las 3D en pociones complejas, ingredientes raros y los calderos de peltre. ¡Pregúntame sobre el extracto de ajenjo! 🧪⚡🦁</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-6">
-        <div class="card h-100">
-          <div class="card-body row text-center align-items-center">
-            <div class="col-6">
-                <h5>Seguidores</h5>
-                <p class="fs-4 fw-bold mb-0 text-warning">543</p>
+    <header class="profile-header">
+        <div class="row justify-content-center align-items-center profile-header-content">
+            <div id="perfil" class="col-auto text-center profile-avatar-container">
+                <img
+                    id="foto"
+                    src="/assets/perfil.jpg"
+                    alt="Foto de perfil de Fennel Hawthorn"
+                    class="profile-avatar">
+                <span id="dot" class="status-indicator" aria-label="Fennel está en línea"></span>
             </div>
-            <div class="col-6">
-                <h5>Seguidos</h5>
-                <p class="fs-4 fw-bold mb-0 text-warning">463</p>
+            <div class="col-auto text-center profile-identity">
+                <h1 class="profile-name">Fennel Hawthorn</h1>
+                <p class="profile-username">@fennel_potions</p>
             </div>
-          </div>
+            <div class="col-auto text-center">
+            <img
+                id="logo"
+                src="/assets/logo.png"
+                alt="Escudo de Gryffindor"
+                class="house-crest">
+            </div>
+            <div class="col-auto text-center">
+            <button type="button" class="btn btn-lechuzas position-relative">
+                Lechuzas
+                <span class="notification-badge">14+</span>
+            </button>
+            </div>
         </div>
-      </div>
-    </div>
+    </header>
 
-    <div class="row g-3 mt-1">
-      <div class="col-sm-4">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title mb-3">Fotografías</h5>
-            <div class="d-flex flex-column gap-2">
-                <img src="/assets/publi1.jpg" class="rounded img-fluid" alt="...">
-                <img src="/assets/publi2.jpg" class="rounded img-fluid" alt="...">
-                <img src="/assets/img1.jpg" class="rounded img-fluid" alt="...">
-                <img src="/assets/img3.jpg" class="rounded img-fluid" alt="...">
-                <img src="/assets/img2.jpg" class="rounded img-fluid" alt="...">
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <div class="col-sm-8">
-        <div class="card mb-3">
-            <div class="card-body">
-                <h5 class="card-title mb-3">Crear nueva publicación</h5>
-                <form>
-                    <div class="mb-3">
-                        <textarea class="form-control" rows="3" placeholder="¿Algún hechizo que quieras compartir?"></textarea>
+    <main id="descripcion" class="container pb-5">
+        <div class="row g-4 mb-4">
+            <div class="col-lg-6">
+                <article class="card card-info h-100">
+                    <div class="card-body">
+                        <h2 class="card-title">
+                            Descripción
+                        </h2>
+                        <p class="card-text mb-0">
+                            Alquimista en potencia y exploradora de mazmorras. Obsesionada con las pociones complejas, ingredientes raros y los calderos de peltre. ¡Pregúntame sobre el extracto de ajenjo! 🧪⚡🦁
+                        </p>
                     </div>
-                    <button type="submit" class="btn btn-warning fw-bold px-4 btn-sm">
-                        Publicar
-                    </button>
-                </form>
+                </article>
             </div>
-        </div>
-
-        <h5 class="text-warning fw-bold mb-3">Publicaciones</h5>
-
-        <div class="card shadow-sm mb-3">
-            <div class="card-body">
-                <div class="d-flex align-items-center mb-2">
-                    <img src="/assets/perfil.jpg" class="rounded-circle me-2" alt="Fennel">
-                    <div>
-                        <h6 class="mb-0">Fennel Hawthorn</h6>
-                        <small class="text-muted">Hace 2 horas</small>
+            <div class="col-lg-6">
+                <article id="seguidores" class="card card-stats h-100">
+                    <div class="card-body d-flex align-items-center">
+                        <div class="row w-100 text-center">
+                            <div class="col-6">
+                                <h2 class="stat-label">Seguidores</h2>
+                                <p class="stat-value">543</p>
+                            </div>
+                            <div class="col-6 stat-divider">
+                                <h2 class="stat-label">Seguidos</h2>
+                                <p class="stat-value">463</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <p>
-                    🧪 ¡Experimento exitoso con el extracto de ajenjo en la mazmorra 4! Logré estabilizar el tono iridiscente sin que el caldero burbujeara de más. ¿Quién más anda probando fórmulas avanzadas hoy? ✨
-                </p>
-                <img src="/assets/publi1.jpg" class="rounded img-fluid" alt="...">
+                </article>
             </div>
         </div>
-
-        <div class="card shadow-sm mb-3">
-            <div class="card-body">
-                <div class="d-flex align-items-center mb-2">
-                    <img src="/assets/perfil.jpg" class="rounded-circle me-2" alt="Fennel">
-                    <div>
-                        <h6 class="mb-0">Fennel Hawthorn</h6>
-                        <small class="text-muted">Ayer a las 8:30 p.m.</small>
+        <div class="row g-4">
+            <aside class="col-lg-4">
+                <section class="card card-gallery">
+                    <div class="card-body">
+                        <h2 class="card-title">
+                            Fotografías
+                        </h2>
+                        <div class="gallery-list">
+                            <img src="/assets/publi1.jpg" class="gallery-item" alt="Poción brillante en un caldero">
+                            <img src="/assets/publi2.jpg" class="gallery-item" alt="Ingredientes para preparar pociones">
+                            <img src="/assets/img1.jpg" class="gallery-item" alt="Mazmorra de Hogwarts">
+                            <img src="/assets/img3.jpg" class="gallery-item" alt="Libro antiguo de pociones">
+                            <img src="/assets/img2.jpg" class="gallery-item" alt="Extracto de ajenjo">
+                        </div>
                     </div>
-                </div>
-                <p>
-                    Buscando ingredientes raros por los terrenos de Hogwarts. Si alguien ve plumas de Diricawl o necesita intercambiar botes de esencia de díctamo, manden lechuzas por la bandeja de entrada. 🦉🌿
-                </p>
-                <img src="/assets/publi2.jpg" class="rounded img-fluid" alt="...">
-            </div>
+                </section>
+            </aside>
+            <section class="col-lg-8">
+                <section class="card card-create mb-4">
+                    <div class="card-body">
+                        <h2 class="card-title">
+                            Crear nueva publicación
+                        </h2>
+                        <form>
+                            <div class="mb-3">
+                                <textarea
+                                    class="form-control"
+                                    rows="4"
+                                    placeholder="¿Algún hechizo que quieras compartir?"
+                                    aria-label="Escribe una nueva publicación"
+                                ></textarea>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                            <button type="submit" class="btn btn-publicar">
+                             Publicar
+                            </button>
+                          </div>
+                        </form>
+                    </div>
+                </section>
+                <h2 class="section-title">
+                    Publicaciones
+                </h2>
+                <article class="card card-post mb-4">
+                    <div class="card-body">
+                        <header class="post-header">
+                            <img src="/assets/perfil.jpg" class="post-avatar" alt="Fennel Hawthorn">
+                            <div class="post-author-info">
+                                <h3 class="post-author">Fennel Hawthorn</h3>
+                                <p class="post-time">Hace 2 horas</p>
+                            </div>
+                        </header>
+                        <p class="post-content">
+                            🧪 ¡Experimento exitoso con el extracto de ajenjo en la mazmorra 4! Logré estabilizar el tono iridiscente sin que el caldero burbujeara de más. ¿Quién más anda probando fórmulas avanzadas hoy? ✨
+                        </p>
+                        <img src="/assets/publi1.jpg" class="post-image" alt="Experimento de extracto de ajenjo">
+                        <footer class="post-actions">
+                            <button type="button" class="btn btn-action">
+                                <span>❤️</span>
+                                42
+                            </button>
+                            <button type="button" class="btn btn-action">
+                                <span>💬</span>
+                                12
+                            </button>
+                            <button type="button" class="btn btn-action">
+                                <span>🦉</span>
+                                Compartir
+                            </button>
+                        </footer>
+                    </div>
+                </article>
+                <article class="card card-post mb-4">
+                    <div class="card-body">
+                        <header class="post-header">
+                            <img src="/assets/perfil.jpg" class="post-avatar" alt="Fennel Hawthorn">
+                            <div class="post-author-info">
+                                <h3 class="post-author">Fennel Hawthorn</h3>
+                                <p class="post-time">Ayer a las 8:30 p.m.</p>
+                            </div>
+                        </header>
+                        <p class="post-content">
+                            Buscando ingredientes raros por los terrenos de Hogwarts. Si alguien ve plumas de Diricawl o necesita intercambiar botes de esencia de díctamo, manden lechuzas por la bandeja de entrada. 🦉🌿
+                        </p>
+                        <img src="/assets/publi2.jpg" class="post-image" alt="Ingredientes raros de pociones">
+                        <footer class="post-actions">
+                            <button type="button" class="btn btn-action">
+                                <span>❤️</span>
+                                38
+                            </button>
+                            <button type="button" class="btn btn-action">
+                                <span>💬</span>
+                                9
+                            </button>
+                            <button type="button" class="btn btn-action">
+                                <span>🦉</span>
+                                Compartir
+                            </button>
+                        </footer>
+                    </div>
+                </article>
+            </section>
         </div>
-      </div>
-    </div>
-</div>
-<script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-      crossorigin="anonymous"
-    ></script>
+    </main>
+
+    <footer class="footer-gryffindor">
+        <p>Hecho con magia en Hogwarts · Orden de Gryffindor</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
 </html>
